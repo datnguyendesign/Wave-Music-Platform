@@ -190,6 +190,20 @@ body {
     padding: 0;
 }
 
+.category .title {
+    padding: 30px 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.category .title a {
+    padding-left: 12px;
+}
+
 main .component {
     margin-top: 16rem;
 }
@@ -585,14 +599,4 @@ main .explore .item p {
 
 .row {
     --bs-gutter-x: 0;
-}
-
-.category .title {
-    padding: 30px 0;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
 }

@@ -104,7 +104,7 @@
             <!-- 2. Category -->
             <section class="category">
 
-                <div class="title">GENRE</div>
+                <div class="title">GENRE <a href="w_wave.php" style="padding-left: 12px;"><i class="fa-solid fa-arrow-right"></i></a></div>
 
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
@@ -303,7 +303,7 @@
 
             <!-- 4. Artists -->
             <section class="artists">
-                <h1 class="title">popular artists</h1>
+                <h1 class="title">popular artists <a href="w_artists.php" style="padding-left: 12px;"><i class="fa-solid fa-arrow-right"></i></a></h1>
 
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
