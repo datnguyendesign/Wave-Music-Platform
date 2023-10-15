@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="logo col-7">
-            <img src="images/logo.svg" alt="">
+            <img src="images/logo2.svg" alt="">
         </div>
     </div>
 

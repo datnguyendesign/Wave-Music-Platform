@@ -78,6 +78,21 @@
                         <p>Podcast</p>
                     </a>
                 </li>
+
+                <li class="sign_in link_item">
+                    <a href="sign_in.php">
+                        <!-- <a href="podcast.php"> -->
+                        <div class="icon"><i class="fa fa-sign-in"></i></div>
+                        <p>Login</p>
+                    </a>
+                </li>
+                <li class="sign_up link_item">
+                    <a href="sign_up.php">
+                        <!-- <a href="podcast.php"> -->
+                        <div class="icon"><i class="fa fa-registered"></i></div>
+                        <p>Register</p>
+                    </a>
+                </li>
             </ul>
         </nav>
 
