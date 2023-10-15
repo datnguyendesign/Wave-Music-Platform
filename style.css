@@ -13,13 +13,19 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+}
+
 .box_container {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background: linear-gradient(93deg, #4C8DB2 3.14%, #000 90.68%);;
 }
 
 .box_container nav {
+    position: fixed;
     width: fit-content;
     height: 100vh;
     display: flex;
@@ -27,6 +33,7 @@ html {
     justify-content: flex-start;
     align-items: center;
     background-color: rgba(0, 0, 0, .76);
+    z-index: 1000;
 }
 
 .box_container nav .logo {
@@ -88,13 +95,20 @@ html {
     display: flex;
 }
 
-.box_container main {
-    padding: 2em 7%;
+.box_container main{
+    margin-left: 10rem;
+    height: 100%;
+    padding-bottom: 20rem;
 }
 
+.box_container main header {
+    padding: 2em 0;
+}
+    
 .box_container main header label {
     background: rgba(217, 217, 217,.4);
-    padding: .5em 1em;
+    padding: 0 1em;
+    height: 46px;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
@@ -111,6 +125,7 @@ html {
     border: none;
     outline: none;
     width: 100%;
+    height: 100%;
     padding-left: 10px;
 }
 
@@ -122,11 +137,12 @@ html {
     border: none;
     outline: none;
     background: transparent;
-    padding-right: 10px;
+    padding: 0 10px;
+    height: 100%;
 }
 
 .box_container main header label button i {
-    font-size: 12px;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -159,5 +175,424 @@ html {
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
+    line-height: normal;
+}
+
+.category {
+    position: relative;
+    height: 18rem;
+    width: 100%;
+    background: transparent;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+main .component {
+    margin-top: 16rem;
+}
+
+main .component .album {
+    display: flex;
+    flex-direction: column;
+}
+
+main .component .album h1 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 3rem;
+}
+
+main .component .album .album_list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    row-gap: 36px;
+}
+
+main .component .album .album_list li {
+    border-radius: 10px;
+    background: rgba(217, 217, 217, .6);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 25rem;
+}
+
+main .component .album .album_list li a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0 8px 12px;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+
+    /* text overflow */
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+main .component .album .album_list li a img {
+    width: 42px;
+    height: 36px;
+    border-radius: 5px;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+main .component .album .album_list li a .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: start;
+}
+
+main .component .album .album_list li a .info h2,
+main .component .album .album_list li a .info p {
+    margin: 0;
+}
+
+main .component .album .album_list li a .info h2 {
+    color: #12222A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+main .component .album .album_list li a .info p {
+    color: #12222A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main .component .podcast {
+    height: max-content;
+}
+
+main .component .podcast h1 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+main .component .podcast .box {
+    padding: 12px 0;
+}
+
+main .component .podcast .box .item {
+    width: 100%;
+    height: 100%;
+}
+
+main .component .podcast .box .item .background{
+    position: relative;
+    background-image: url("images/How\ To\ Propagate\ Monstera.jpg");
+    border-radius: 15px;
+    max-width: 973px;
+    height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+    -webkit-filter: blur(1px); 
+    overflow: hidden;  
+}
+
+main .component .podcast .box .item .background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(217, 217, 217, .6);
+    border-radius: 15px;
+}
+
+main .component .podcast .box .item .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .component .podcast .box .item .content img {
+    width: 215px;
+    height: 227px;
+    display: block;
+    flex-shrink: 0;
+}
+
+main .component .podcast .box .item .content .description {
+    display: flex;
+    flex-direction: column;
+    max-width: 45rem;
+    align-items: start;
+    row-gap: 8px;
+}
+
+main .component .podcast .box .item .content .description h2 {
+    color: #1E1E1E;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+main .component .podcast .box .item .content .description h3 {
+    color: rgba(18, 34, 42, 0.85);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+main .component .podcast .box .item .content .description .writer {
+    display: flex;
+    width: 139px;
+    padding: 3px 10px 3px 10px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 15px;
+    border: 0.75px solid #12222A;
+    list-style: none;
+    text-decoration: none;
+}
+
+main .component .podcast .box .item .content .description .writer img {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+main .component .podcast .box .item .content .description .writer .name{
+    color: #12222A;
+    white-space: nowrap;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+    margin: 0; 
+}
+
+main .component .podcast .box .item .content .description p {
+    color: #12222A;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+main .artists .title,
+main .playlist .title,
+main .explore .title {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 70px;
+    padding: 0 0 20px 8px;
+}
+
+main .artists .item {
+    list-style: none;
+    text-decoration: none;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+}
+
+main .artists .item img {
+    border-radius: 50%;
+    width: 174px;
+    height: 174px;
+    flex-shrink: 0;
+}
+
+main .artists .item h2 {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+main .playlist .swiper-slide {
+    border-radius: 15px;
+    background: rgba(217, 217, 217, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .playlist .item {
+    margin: 28px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    list-style: none;
+    text-decoration: none;
+}
+
+main .playlist .item img {
+    width: 175px;
+    height: 188px;
+    flex-shrink: 0;
+}
+
+main .playlist .swiper-slide .item .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .playlist .swiper-slide .item .content .detail {
+    text-align: left;
+}
+
+main .playlist .swiper-slide .item .content .detail h2 {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main .playlist .swiper-slide .item .content .detail p {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+main .playlist .swiper-slide .item .content i {
+    font-size: 24px;
+    
+}
+
+main .explore .item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0;
+    column-gap: 24px;
+}
+
+main .explore .item img {
+    width: 60px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+main .explore .item h2 {
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+main .explore .item p {
+    margin: 0;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 8px 8px !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0.8;
+}
+
+.swiper-slide h1 {
+    position: absolute;
+    color: #FFFDFD;
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-top-offset: 45%;
+  --swiper-navigation-sides-offset: 0px;
+  --swiper-navigation-color: #652F2F;
+  padding: 20px;
+  background-color: rgba(217, 217, 217, .6);
+  border-radius: 50%;
+  
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.category .title {
+    padding: 30px 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
     line-height: normal;
 }

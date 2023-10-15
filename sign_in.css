@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.box-container {
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    background: linear-gradient(93deg, #4C8DB2 3.14%, #000 90.68%);;
+}
+
+.box-container .box_sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+}
+
+.box-container .box_sign-in h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 100% */
+}
+
+.box-container .box_sign-in form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+}
+
+.box-container .box_sign-in form label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.box-container .box_sign-in form label input[type="email"],
+.box-container .box_sign-in form label input[type="password"],
+.box-container .box_sign-in form label input[type="text"],
+.box-container .box_sign-in form label input[type="date"] {
+    width: 342px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, .6);
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    padding: 12px;  
+}
+
+.box-container .box_sign-in form label:has(input[type="date"] ){
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+}
+
+.box-container .box_sign-in form label input[type="date"] {
+    width: 163px;
+    color: rgb(0, 0, 0, .6);
+}
+
+.box-container .box_sign-in form #checkbox_label {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 302px;
+    gap: 8px;
+}
+
+.box-container .box_sign-in form #checkbox_label input {
+    margin-top: 6px;
+}
+
+.box-container .box_sign-in form #checkbox_label p {
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 200% */
+    margin: 0;
+}
+
+.box-container .box_sign-in form #checkbox_label p a {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+
+.box-container .box_sign-in form input[type="submit"] {
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: transparent;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+}
+
+.box-container .box_sign-in .other-method {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.box-container .box_sign-in .other-method p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px; /* 0% */
+    margin: 0;
+}
+
+.box-container .box_sign-in .other-method a i {
+    font-size: 24px;
+}
+
+.box-container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container .logo img {
+    width: 517.914px;
+    
+}
+
+.row {
+    --bs-gutter-x: 0rem !important;
+}
+
